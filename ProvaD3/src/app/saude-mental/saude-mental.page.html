@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Saude Mental</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label>id</ion-label>
+            <ion-input type="text" name="id"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Nome</ion-label>
+            <ion-textarea name="name"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label>Idade</ion-label>
+            <ion-textarea name="idade"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label>Saude Mental</ion-label>
+            <ion-select value="A" okText="Ok" cancelText="Cancel">
+                <ion-select-option value="1">1 - Péssima</ion-select-option>
+                <ion-select-option value="2">2 - Ruim</ion-select-option>
+                <ion-select-option value="3">3 - Normal</ion-select-option>
+                <ion-select-option value="4">4 - ótima</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Raca Cor</ion-label>
+            <ion-textarea name="raca"></ion-textarea>
+        </ion-item>
+        <ion-button type="submit">Buscar por ID</ion-button>
+        <ion-button type="submit">Buscar por Cor</ion-button>
+    </form>
+</ion-content>
